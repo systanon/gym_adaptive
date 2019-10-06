@@ -55,7 +55,7 @@ body{
   background: #000000;
 }
 /*---------------------------------------------sm-------------------------*/
-@media (max-width:767px){
+@media (min-width: 0px) and (max-width: 767px){
   div.header:before{
     display: none;
   }
@@ -248,7 +248,7 @@ body{
 
 }
 /*---------------------------------media md ------------------------*/
-@media (max-width:991px){
+@media(min-width: 768px) and (max-width: 991px){
     h2#about{
     position: static;
     transform: rotate(0);
@@ -285,7 +285,7 @@ body{
     display: none;
    }
    div.main4:before,div.main4:after{
-    width: 0%;
+    width: 30%;
   }
   h2.sm_md{
     display: block;
@@ -322,8 +322,9 @@ body{
     top:30px;
   }
   div.owl-carousel div.owl-item img{
-    width: 100%;
+   /* width: 100%;*/
     margin-right: 0;
+    margin:0 auto;
   }
   div.into_footer {
     padding-left: 80px;
@@ -332,7 +333,7 @@ body{
   
 }
 /*--------------------------------- md----------------------------------*/
-@media (max-width:1199px){
+@media (min-width: 992px) and (max-width:1199px){
   ul.week_schedule1 li{
     width: 210px;
   }
@@ -469,9 +470,6 @@ body{
 
 /*--------------------------------------main----------------------------------------------*/
 
-/*.gallery {
-	padding-left:95px;
-}*/
 .main{
 	background-color: #1d1619;
 	position: relative;
@@ -479,13 +477,6 @@ body{
 .gallery-top,.content,#about{
 	margin-top: 160px;
 }
-/*.gallery2{
-	display: flex;
-	margin-top: 30px;
-}
-.gallery2>*:not(:last-child){
-	margin-right: 30px;
-}*/
 .gallery-top{
 	height:280px;
 }
@@ -712,7 +703,7 @@ body{
   color: #fff;
   text-transform: uppercase;
   margin-top: 155px;
-  margin-left: 94px; 
+ text-align: center; 
 }
 .personal{
 	font-family: 'Raleway', sans-serif;
@@ -759,6 +750,8 @@ body{
   text-transform: uppercase;
   display: inline-block;
   padding-top: 15px;
+  position: relative;
+  z-index: 5;
 }
 .main4:before{
 	content: "";
@@ -823,7 +816,7 @@ body{
 }
 .wpapper_schedule{
   display: inline-block;
-  padding: 12px 30px;
+  padding: 12px 20px;
 }
 .time{
   font-size: 30px;
